@@ -28,6 +28,16 @@ Dependencies
 None
 
 
+Example requirements.yml
+------------------------
+
+```yaml
+---
+roles:
+  - name: epfl_si.s3cmd
+    version: 9f1b65e
+```
+
 Example Inventory
 -----------------
 
