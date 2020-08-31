@@ -70,12 +70,10 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - role: s3cmd
-           vars:
-             s3cmd_user: appadm
-         - role: s3cmd
-           vars:
-             s3cmd_user: root
+         - role: epfl_si.s3cmd
+           s3cmd_user: appadm
+         - role: epfl_si.s3cmd
+           s3cmd_user: root
 License
 -------
 
