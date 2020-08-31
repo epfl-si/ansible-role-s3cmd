@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: s3cmd
   author: EPFL SI-EXHEB
   description: Install and configure s3cmd on Debian and RedHat family
   company: École Polytechnique Fédérale de Lausanne
