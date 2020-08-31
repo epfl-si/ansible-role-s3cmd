@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  author: EPFL SI-EXHEB
+  description: Install and configure s3cmd on Debian and RedHat family
+  company: École Polytechnique Fédérale de Lausanne
+
+  license: MIT
+
+  min_ansible_version: 2.9
+
+  # To view available platforms and versions (or releases), visit:
+  # https://galaxy.ansible.com/api/v1/platforms/
+  platforms:
+    - name: EL
+      versions:
+        - 7
+        - 8
+    - name: Ubuntu
+      versions:
+        - focal
+
+  galaxy_tags:
+    - s3cmd
+    - s3
+    - system
+    - os
+
+dependencies: []

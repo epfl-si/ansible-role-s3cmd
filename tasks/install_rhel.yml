@@ -1,0 +1,25 @@
+---
+
+# Task file to install s3cmd on RHEL
+
+- name: Install s3cmd on RHEL 7
+  become: true
+  package:
+    name: s3cmd
+    state: present
+  when: ansible_distribution_major_version == "7"
+
+- name: Install s3cmd depencencies on RHEL 8
+  become: true
+  package:
+    name: python36
+    state: present
+  when: ansible_distribution_major_version == "8"
+
+- name: Install s3cmd on RHEL 8
+  become: true
+  pip:
+    executable: pip3
+    name: s3cmd
+    state: present
+  when: ansible_distribution_major_version == "8"

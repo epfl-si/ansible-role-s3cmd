@@ -1,0 +1,4 @@
+---
+# Defaults variables for ansible-role-s3cmd
+s3_human_readable_sizes: true
+s3_global_env_var: true
