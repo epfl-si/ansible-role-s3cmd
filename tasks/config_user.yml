@@ -2,15 +2,15 @@
 
 # Copy the template into user home dir
 
-- name: Find {{ s3cmd_user }} home path
+- name: Find '{{ s3cmd_user }}' home path
   become: true
   user:
-    name: "{{ s3cmd_user }}"
+    name: '{{ s3cmd_user }}'
   register: user_vars
 
-- name: Create the configuration file for user {{ s3cmd_user }}
+- name: Create the configuration file for user '{{ s3cmd_user }}'
   become: true
-  become_user: "{{ s3cmd_user }}"
+  become_user: '{{ s3cmd_user }}'
   template:
     src: templates/s3cfg.j2
-    dest: "{{ user_vars.home }}/.s3cfg"
+    dest: '{{ user_vars.home }}/.s3cfg'

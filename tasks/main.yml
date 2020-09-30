@@ -4,15 +4,13 @@
 
 - name: Install s3cmd on RHEL Family
   include_tasks: install_rhel.yml
-  when:
-    - ansible_os_family == "RedHat"
+  when: ansible_os_family == "RedHat"
 
 - name: Install s3cmd on Debian Family
   include_tasks: install_debian.yml
-  when:
-    - ansible_os_family == "Debian"
+  when: ansible_os_family == "Debian"
 
-- name: Put configuration into {{ s3cmd_user }} home dir
+- name: Put configuration into '{{ s3cmd_user }}' home dir
   include_tasks: config_user.yml
 
 - name: Create a $S3 environment variable for all users
