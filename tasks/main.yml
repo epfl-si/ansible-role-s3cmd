@@ -18,4 +18,7 @@
   template:
     src: templates/s3.sh.j2
     dest: /etc/profile.d/s3.sh
+    owner: root
+    group: root
+    mode: '0644'
   when: s3_global_env_var
