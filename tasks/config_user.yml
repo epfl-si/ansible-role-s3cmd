@@ -17,3 +17,4 @@
     owner: "{{ s3cmd_user }}"
     group: "{{ s3cmd_user }}"
     mode: '0600'
+  when: not ansible_check_mode
