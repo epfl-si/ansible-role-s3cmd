@@ -1,6 +1,8 @@
 Role Name
 =========
 
+DEPRECATED - This role has been migrated in [epfl_si.rhel](https://github.com/epfl-si/ansible-collection-rhel) collection.
+
 Install the s3cmd command on Debian and RedHat family.
 
 s3cmd is used to put/get/ls from s3 storage.
